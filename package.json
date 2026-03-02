@@ -1,16 +1,18 @@
 {
   "name": "mi_repertorio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Segundo desafío de módulo de Backend (curso de ADL)",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
+  "type": "commonjs",
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14"
   }
 }
