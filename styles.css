@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+body {
+  text-align: center;
+  background-image:
+    linear-gradient(to right, #676a71 1px, transparent 1px),
+    linear-gradient(to bottom, #676a71 1px, transparent 1px);
+  background-size: 3.4em 3.4em;
+  background-color: #020f16;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: #f0f0f0;
+}
+
+#AgregarCancion,
+#ListaCanciones {
+  background-color: rgba(28, 28, 28, 0.7);
+  backdrop-filter: blur(4px);
+  border: 1px solid #676a71;
+  border-radius: 20px;
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 800px;
+}
+
+h2,
+h4 {
+  font-weight: 300;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: xxx-large;
+}
+
+h4 {
+  margin: 0;
+}
+
+.form-control {
+  background: transparent;
+  border: 1px solid #676a71;
+  border-radius: 10px;
+  color: white !important;
+  padding: 0.7rem;
+}
+
+.form-control:focus {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: #ffffff;
+  box-shadow: none;
+}
+
+label {
+  font-size: 0.8rem;
+  color: #9da1a5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn {
+  border-radius: 12px;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  transition: opacity 0.2s;
+}
+
+.btn-success {
+  background-color: #ffffff;
+  color: #1c1c1c;
+}
+.btn-info {
+  background-color: #676a71;
+  color: white;
+}
+.btn-warning {
+  background-color: transparent;
+  border: 1px solid #f1c40f;
+  color: #f1c40f;
+}
+.btn-danger {
+  background-color: transparent;
+  border: 1px solid #e74c3c;
+  color: #e74c3c;
+}
+
+.table {
+  color: #f0f0f0;
+  margin-top: 1rem;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table thead th {
+  border-top: none;
+  border-bottom: 1px solid #676a71;
+  color: #676a71;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  padding: 0.75rem 0.5rem;
+}
+
+.table td {
+  border-top: 1px solid rgba(103, 106, 113, 0.2);
+  vertical-align: middle;
+  padding: 0.75rem 0.5rem;
+}
+
+.table-dark {
+  background-color: transparent !important;
+}
+
+.container {
+  width: 90%;
+}
+
+@media (max-width: 768px) {
+  .table {
+    display: block;
+  }
+
+  .table thead {
+    display: none;
+  }
+
+  .table tbody,
+  .table tr,
+  .table td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .table tbody tr {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid rgba(103, 106, 113, 0.3);
+    border-radius: 10px;
+    background-color: rgba(28, 28, 28, 0.5);
+  }
+
+  .table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    border-top: none;
+    border-bottom: 1px solid rgba(103, 106, 113, 0.1);
+    text-align: right;
+  }
+
+  .table td:last-child {
+    border-bottom: none;
+  }
+
+  .table td::before {
+    content: attr(data-label);
+    font-weight: 500;
+    color: #676a71;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    margin-right: 1rem;
+    text-align: left;
+  }
+
+  .fa-pen-to-square,
+  .fa-trash {
+    font-size: 1.1rem !important;
+    margin: 0 0.25rem !important;
+  }
+
+  #AgregarCancion,
+  #ListaCanciones {
+    padding: 1.5rem;
+    margin: 1rem auto;
+    width: 95%;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #AgregarCancion,
+  #ListaCanciones {
+    padding: 1rem;
+    border-radius: 15px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .table td {
+    font-size: 0.9rem;
+  }
+}

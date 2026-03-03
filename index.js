@@ -3,6 +3,8 @@ const fs = require("fs");
 const app = express();
 
 app.use(express.json());
+app.use(express.static(__dirname));
+
 app.listen(3000, console.log("Servidor encendido en el puerto 3000"));
 
 app.get("/", (req, res) => {
